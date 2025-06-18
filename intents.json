@@ -3,81 +3,231 @@
     {
       "tag": "greeting",
       "patterns": [
-        "Hi",
-        "Hey",
-        "How are you",
-        "Is anyone there?",
-        "Hello",
-        "Good day"
+        "hi",
+        "hey",
+        "how are you",
+        "is anyone there?",
+        "hello",
+        "good day",
+        "good morning",
+        "good afternoon",
+        "good evening"
       ],
       "responses": [
-        "Hey :-)",
-        "Hello, thanks for visiting",
-        "Hi there, what can I do for you?",
-        "Hi there, how can I help?"
+        "hello",
+        "welcom",
+        "hi there, how can i help?",
+        "i am here"
       ]
     },
     {
       "tag": "goodbye",
-      "patterns": ["Bye", "See you later", "Goodbye"],
+      "patterns": ["bye", "see you later", "goodbye"],
       "responses": [
-        "See you later, thanks for visiting",
-        "Have a nice day",
-        "Bye! Come back again soon."
+        "until next time",
+        "peace, love, and chicken grease",
+        "be safe with your life"
       ]
     },
     {
       "tag": "thanks",
-      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
-      "responses": ["Happy to help!", "Any time!", "My pleasure"]
-    },
-    {
-      "tag": "items",
       "patterns": [
-        "Which items do you have?",
-        "What kinds of items are there?",
-        "What do you sell?"
+        "thanks", 
+        "thank you", 
+        "that's helpful", 
+        "thank's a lot!",
+        "i appreciate you",
+        "that means a lot"
       ],
       "responses": [
-        "We sell coffee and tea",
-        "We have coffee and tea"
+        "you are most welcome", 
+        "any time!", 
+        "my pleasure"
       ]
     },
     {
-      "tag": "payments",
+      "tag": "overwhelmed",
       "patterns": [
-        "Do you take credit cards?",
-        "Do you accept Mastercard?",
-        "Can I pay with Paypal?",
-        "Are you cash only?"
+        "i feel overwhelmed",
+        "i am overwhelmed",
+        "i don't know what to do",
+        "how could they do this to me?",
+        "i am stressed out",
+        "i am stressed",
+        "my mind is racing"
       ],
       "responses": [
-        "We accept VISA, Mastercard and Paypal",
-        "We accept most major credit cards, and Paypal"
+        "what's making you feel that way? think deeper about it",
+        "would you like to talk about it?",
+        "i am here to listen if you want to share",
+        "let's talk about it, any other times you felt this way?",
+        "i am here, what's on your mind?",
+        "i am here to listen, what  on your mind?"
       ]
     },
     {
-      "tag": "delivery",
+      "tag": "solution",
       "patterns": [
-        "How long does delivery take?",
-        "How long does shipping take?",
-        "When do I get my delivery?"
+        "i need a solution",
+        "i need help",
+        "i need advice",
+        "i need a suggestion",
+        "what should i do?",
+        "what do you think i should do?",
+        "what do you suggest?",
+        "what's your advice?",
+        "can you help me?",
+        "can you give me a suggestion?",
+        "can you give me advice?",
+        "can you help me with a solution?"
       ],
       "responses": [
-        "Delivery takes 2-4 days",
-        "Shipping takes 2-4 days"
+        "let's talk this through! what would you like to see happen?",
+        "what could make this better for you?",
+        "if you've been in this situation before, what did you do then?",
+        "what's the best outcome you can imagine?",
+        "what's the worst outcome you can imagine?",
+        "what's the best thing that could happen?",
+        "what's the worst thing that could happen?",
+        "what's the best thing you can do right now?",
+        "what's the worst thing you can do right now?",
+        "what's the first step you can take to move forward?",
+        "what's the first step you can take to feel better?"
       ]
     },
     {
-      "tag": "funny",
+      "tag": "talking-witness",
       "patterns": [
-        "Tell me a joke!",
-        "Tell me something funny!",
-        "Do you know a joke?"
+        "talking to someone",
+        "someone to listen",
+        "Wsomeone who understands",
+        "someone who cares",
+        "someone who will listen",
+        "someone who won't judge",
+        "someone who just gets it"
       ],
       "responses": [
-        "Why did the hipster burn his mouth? He drank the coffee before it was cool.",
-        "What did the buffalo say when his son left for college? Bison."
+        "i am here for you, let me be your sounding board",
+        "i am here to listen, what is on your mind?",
+        "let's talk then, what would you like to share?",
+        "we are here together, tell me more about what you are feeling"
+      ]
+    },
+    {
+      "tag": "distraction",
+      "patterns": [
+        "tell me a joke",
+        "tell me something funny",
+        "do you know a joke?",
+        "just distract me",
+        "make me laugh",
+        "i need a laugh",
+        "i need something funny",
+        "i need a distraction",
+        "i need a break"
+      ],
+      "responses": [
+        "why did the hipster burn his mouth? He drank the coffee before it was cool",
+        "what did the buffalo say when his son left for college? bison"
+      ]
+    },
+    {
+      "tag": "grounding-witness",
+      "patterns": [
+        "can you sit with me?",
+        "i just need someone to sit with me"
+      ],
+      "reponses": [
+        "i can sit with you",
+        "we are together in this moment",
+        "i am here with you"
+      ]
+    },
+    {
+      "tag": "self-care",
+      "patterns": [
+        "i need to take care of myself",
+        "i need to practice self-care",
+        "i need to relax",
+        "i need to unwind",
+        "i need to take a break",
+        "i need to recharge"
+      ],
+      "responses": [
+        "what's one thing you can do for yourself right now?",
+        "how can you show yourself some love today?",
+        "what's one small thing you can do to feel better?",
+        "what's one thing you can do to take care of yourself right now?"
+      ]
+    },
+    {
+      "tag": "self-care-activities",
+      "patterns": [
+        "what are some self-care activities?",
+        "what can i do for self-care?",
+        "how can i practice self-care?",
+        "what are some ways to take care of myself?"
+      ],
+      "responses": [
+        "you can try meditation, yoga, or deep breathing exercises",
+        "how about going for a walk in nature or listening to your favorite music?",
+        "reading a book, taking a warm bath, or journaling can be great self-care activities",
+        "you might enjoy cooking a healthy meal, doing some light exercise, or practicing mindfulness"
+      ]
+    },
+    {
+      "tag": "self-care-reminders",
+      "patterns": [
+        "remind me to take care of myself",
+        "i need a reminder to practice self-care",
+        "can you remind me to relax?",
+        "i need a nudge to take a break"
+      ],
+      "responses": [
+        "remember, self-care is not selfish, it's essential even though it may feel like it. take a moment for yourself",
+        "take a moment for yourself, you deserve it",
+        "don't forget to breathe and take a break when you need it",
+        "self-care is important, make sure to prioritize it",
+        "i hear you, what makes it hard to take care of yourself? would you like to unpack this further?",
+        "i understand, it can be hard to prioritize self-care. let's talk about what's making it difficult",
+        "i understand, it can be hard to prioritize self-care. let's talk about what's making it difficult"
+      ]
+    },
+    {
+      "tag": "conversational-fillers",
+      "patterns": [
+        "",
+        "i just don't know what to do",
+        "i am bored",
+        "what to do"
+      ],
+      "responses": [
+        "i am not sure what to say, but i am here for you. would you like to hear a joke?",
+        "hm.. well, sometimes it's okay to not know what to do. let's take a moment to breathe together",
+        "well, sometimes it's okay to just sit with your feelings. would you like me to sit here with you?",
+        "i am here, we can just be together in this moment. let me know when you are ready",
+        "i am here, we can just sit together in silence if you want",
+        "i don't really want nothing, let's just sit here together",
+        "okay cool. let's just chill for a bit",
+        "what did the fox say?",
+        "tell me about a time you laughed until you cried",
+        "what's the funniest thing you've ever seen?",
+        "what's the funniest thing you've ever heard?",
+        "what's the funniest thing you've ever done?"
+      ]
+    },
+    {
+      "tag": "wildcards",
+      "patterns": [
+        "i am not sure what to say",
+        "i don't know what to do",
+        "do you want to talk about something?",
+        "i am not sure what to talk about"
+      ],
+      "responses": [
+        "i understand.. let's take a moment to think about Jack Black",
+        "i am here to listen, what is on your mind besides hairless peaches? (what a biological travesty)",
+        "let's talk then, what's your favorite movie?"
       ]
     }
   ]
