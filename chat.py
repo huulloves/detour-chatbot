@@ -8,7 +8,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from model import NeuralNet
 from nltk_utils import bag_of_words, tokenize
 
-# Load intent-based model
+# load intent-based model
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 with open('intents.json', 'r') as json_data:
     intents = json.load(json_data)
@@ -25,7 +25,7 @@ intent_model.load_state_dict(model_state)
 intent_model.eval()
 
 def get_intent_response(user_history):
-    # Combine the last N user utterances for intent detection
+    # combine the last N user utterances for intent detection
     N = 3
     if len(user_history) < N:
         combined = " ".join(user_history)
@@ -45,7 +45,7 @@ def get_intent_response(user_history):
             return tag, prob.item(), intent.get('responses', [])
     return None, prob.item(), []
 
-# Load DialoGPT
+# load DialoGPT
 tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium")
 dialogpt_model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-medium")
 
@@ -95,7 +95,7 @@ if __name__ == "__main__":
                 )
                 chat_history.append(f"Bot: {clarifying_prompt}")
                 response = get_dialogpt_response(chat_history)
-                chat_history.pop()  # Remove clarifying prompt from history after use
+                chat_history.pop()  # remove clarifying prompt from history after use
             else:
                 response = get_dialogpt_response(chat_history)
 
